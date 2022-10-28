@@ -2,7 +2,7 @@
 # tasks file for lighthouse
   - name: Create home directory for www
     file:
-      path: {{ lighthouse_dir }}
+      path: "{{ lighthouse_dir }}"
       state: directory
   - name: Get lighthouse distrib
     git:
